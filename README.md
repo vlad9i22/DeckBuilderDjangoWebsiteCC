@@ -18,7 +18,7 @@ The main part of the game is creation of a deck to play in 2vs2 mode. But there'
 2) Ability to discuss decks.
 3) ML cards suggestion.
 
-##### Tools:
+# Tools:
 - Django
 
 # Interface layout ( Currently just a preview, final website will look differently )
