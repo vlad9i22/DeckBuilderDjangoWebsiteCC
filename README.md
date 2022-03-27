@@ -18,3 +18,10 @@ The main part of the game is creation of a deck to play in 2vs2 mode. But there'
 
 ##### Tools:
 - Django
+
+# Interface layout ( Currently just a preview, final website will look differently )
+##### Main Interface:
+![mainintefaceCCDeckBuilder](https://user-images.githubusercontent.com/25961793/160299396-ef5c4e6c-6eb8-443f-a991-695457e31abd.gif)
+
+##### Deck building:
+![userInterfaceCCDeckBuilder](https://user-images.githubusercontent.com/25961793/160299762-8fd4d757-c38f-4bd4-b62a-2f49cb1b94dd.gif)
