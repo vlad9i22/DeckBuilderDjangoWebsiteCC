@@ -8,7 +8,7 @@ The main part of the game is creation of a deck to play in 2vs2 mode. But there'
 
       1.2) Cooperative deck creation &#9744;
  
-      3.3) Suggest card to partner &#9744;
+      1.3) Suggest card to partner &#9744;
 
 2) Save deck &#9744;
 3) Quick deck insertion from png (Take picture of a deck ingame -> Insert to website -> PROFIT) &#9744;
