@@ -13,3 +13,6 @@ The main part of the game is creation of a deck to play in 2vs2 mode. But there'
 ##### Additional features:
 1) Ability to post decks. &#9744;
 2) Ability to discuss decks. &#9744;
+
+##### Tools:
+- Django
