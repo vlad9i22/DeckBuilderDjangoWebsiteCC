@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- Используется html 5 версии -->
+<html lang="ru"> <!-- Язык сайта - русский -->
+  {% load static %}
+  <head>    
+    <meta charset="utf-8">
+    <title>Mega DeckBuilder </title>
+  </head>
+  <header class="page-header">
+    {% include 'includes/head.html'%}
+  </header>
+  <style>
+    body {
+      background-image: url("{% static 'data/background/background.png' %}");
+     }
+     h1 {
+       color: #FFFFFF;
+     }
+     .button {
+       position: relative;
+     }
+     .Background {
+       position:relative;
+       box-sizing: content-box;
+       width: 100%;
+     }
+  </style>
+  <form method="get">
+    {% csrf_token %}
+    <div class="container" align="center">
+        <input type="image" src="{% static 'data/cards/' %}{{slot1}}" width=7.5% name="ChosenSlot;1"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot2}}" width=7.5% name="ChosenSlot;2"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot3}}" width=7.5% name="ChosenSlot;3"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot4}}" width=7.5% name="ChosenSlot;4"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot5}}" width=7.5% name="ChosenSlot;5"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot6}}" width=7.5% name="ChosenSlot;6"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot7}}" width=7.5% name="ChosenSlot;7"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot8}}" width=7.5% name="ChosenSlot;8"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot9}}" width=7.5% name="ChosenSlot;9"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot10}}" width=7.5% name="ChosenSlot;10"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot11}}" width=7.5% name="ChosenSlot;11"/>
+        <input type="image" src="{% static 'data/cards/' %}{{slot12}}" width=7.5% name="ChosenSlot;12"/>
+    </div>
+    <div class="container" align="center">
+      <input type="image" src="{% static 'data/cards/' %}{{slot13}}" width=7.5% name="ChosenSlot;13"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot14}}" width=7.5% name="ChosenSlot;14"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot15}}" width=7.5% name="ChosenSlot;15"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot16}}" width=7.5% name="ChosenSlot;16"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot17}}" width=7.5% name="ChosenSlot;17"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot18}}" width=7.5% name="ChosenSlot;18"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot19}}" width=7.5% name="ChosenSlot;19"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot20}}" width=7.5% name="ChosenSlot;20"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot21}}" width=7.5% name="ChosenSlot;21"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot22}}" width=7.5% name="ChosenSlot;22"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot23}}" width=7.5% name="ChosenSlot;23"/>
+      <input type="image" src="{% static 'data/cards/' %}{{slot24}}" width=7.5% name="ChosenSlot;24"/>
+    </div>
+    <div class="container" align="right">
+      <input type="image" src="{% static 'data/buttons/black_button.png' %}" width=4% name="Button;Black"/>
+      <input type="image" src="{% static 'data/buttons/blue_button.png' %}" width=4% name="Button;Blue"/>
+      <input type="image" src="{% static 'data/buttons/crystal_button.png' %}" width=4% name="Button;Crystal"/>
+      <input type="image" src="{% static 'data/buttons/green_button.png' %}" width=4% name="Button;Green"/>
+      <input type="image" src="{% static 'data/buttons/white_button.png' %}" width=4% name="Button;White"/>
+    </div>
+    <div class="Background" align="center">
+      <img src="{% static 'data/makets/' %}{{maket_name}}" width="100%">
+      {% for entry in tree_layout %}
+        <input type="image" src="/static/{{entry.impath}}" width={{entry.width}} style={{entry.style}} name={{entry.name}}/>
+      {% endfor %}
+    </div>
+  </form>
+  <footer class="border-top text-center py-3">
+    <p>This my project dont steal stealer! </p>
+  </footer>
+  <div class="main_wrapper">
+  </div>
