@@ -115,6 +115,8 @@ def process_deckbuilder_request(request):
     Processes and parses deckbuild webpage request
     '''
     context = json.load(open("templates/static/jsons/deckbuilder_state_default.json", "r"))
+    if "deck_switch" not in request.session.keys():
+        request.session["deck_switch"] = 0
     color_info = copy_session_information(context, request)
     button_name = get_clickedbutton_name(request.GET.dict())
     if button_name is None:    # No changes provided
