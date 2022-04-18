@@ -1,1 +1,0 @@
-<QueryDict: {'csrfmiddlewaretoken': ['aFoaoajAudMbTWFYCqZsZa1FcW1ELUZ17bCjmuIFEWGerw4iGAcuwdxSxsnTGKIs'], 'Unit;StoneWeaversSpawner.x': ['82'], 'Unit;StoneWeaversSpawner.y': ['66']}>

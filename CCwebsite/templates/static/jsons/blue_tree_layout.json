@@ -1,4 +1,166 @@
 {
     "tree_layout": [
+    {
+        "impath": "data/cards/blue/aegis.png",
+        "width": "8%",
+        "style": "position:absolute;left:73%;top:55%;",
+        "name": "unit;blue/aegis"
+       },
+       {
+        "impath": "data/cards/blue/aimbot.png",
+        "width": "8%",
+        "style": "position:absolute;left:55%;top:81%;",
+        "name": "unit;blue/aimbot"
+       },
+       {
+        "impath": "data/cards/blue/ammobox.png",
+        "width": "8%",
+        "style": "position:absolute;left:64%;top:55%;",
+        "name": "unit;blue/ammobox"
+       },
+       {
+        "impath": "data/cards/blue/atlas.png",
+        "width": "8%",
+        "style": "position:absolute;left:73%;top:31%;",
+        "name": "unit;blue/atlas"
+       },
+       {
+        "impath": "data/cards/blue/breachers.png",
+        "width": "8%",
+        "style": "position:absolute;left:19%;top:81%;",
+        "name": "unit;blue/breachers"
+       },
+       {
+        "impath": "data/cards/blue/breachers_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:19%;top:31%;",
+        "name": "unit;blue/breachers_spawner"
+       },
+       {
+        "impath": "data/cards/blue/conductor.png",
+        "width": "8%",
+        "style": "position:absolute;left:45.5%;top:55%;",
+        "name": "unit;blue/conductor"
+       },
+       {
+        "impath": "data/cards/blue/conductor_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:64%;top:31%;",
+        "name": "unit;blue/conductor_spawner"
+       },
+       {
+        "impath": "data/cards/blue/echoprojector.png",
+        "width": "8%",
+        "style": "position:absolute;left:54%;top:5%;",
+        "name": "unit;blue/echoprojector"
+       },
+       {
+        "impath": "data/cards/blue/echoprojector_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:64%;top:81%;",
+        "name": "unit;blue/echoprojector_spawner"
+       },
+       {
+        "impath": "data/cards/blue/energy_rift.png",
+        "width": "8%",
+        "style": "position:absolute;left:10%;top:31%;",
+        "name": "unit;blue/energy_rift"
+       },
+       {
+        "impath": "data/cards/blue/factoryreset.png",
+        "width": "8%",
+        "style": "position:absolute;left:73%;top:81%;",
+        "name": "unit;blue/factoryreset"
+       },
+       {
+        "impath": "data/cards/blue/flux.png",
+        "width": "8%",
+        "style": "position:absolute;left:55%;top:31%;",
+        "name": "unit;blue/flux"
+       },
+       {
+        "impath": "data/cards/blue/gatling.png",
+        "width": "8%",
+        "style": "position:absolute;left:1%;top:42.5%;",
+        "name": "unit;blue/gatling"
+       },
+       {
+        "impath": "data/cards/blue/gatling_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:19%;top:5%;",
+        "name": "unit;blue/gatling_spawner"
+       },
+       {
+        "impath": "data/cards/blue/gatlingturret.png",
+        "width": "8%",
+        "style": "position:absolute;left:19%;top:55%;",
+        "name": "unit;blue/gatlingturret"
+       },
+       {
+        "impath": "data/cards/blue/inversegravity.png",
+        "width": "8%",
+        "style": "position:absolute;left:28%;top:5%;",
+        "name": "unit;blue/inversegravity"
+       },
+       {
+        "impath": "data/cards/blue/missileturret.png",
+        "width": "8%",
+        "style": "position:absolute;left:37%;top:81%;",
+        "name": "unit;blue/missileturret"
+       },
+       {
+        "impath": "data/cards/blue/moag.png",
+        "width": "8%",
+        "style": "position:absolute;left:82%;top:81%;",
+        "name": "unit;blue/moag"
+       },
+       {
+        "impath": "data/cards/blue/moag_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:82%;top:5%;",
+        "name": "unit;blue/moag_spawner"
+       },
+       {
+        "impath": "data/cards/blue/opressors_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:91%;top:31%;",
+        "name": "unit;blue/opressors_spawner"
+       },
+       {
+        "impath": "data/cards/blue/opressors.png",
+        "width": "8%",
+        "style": "position:absolute;left:64%;top:5%;",
+        "name": "unit;blue/opressors"
+       },
+       {
+        "impath": "data/cards/blue/orbitalstrike.png",
+        "width": "8%",
+        "style": "position:absolute;left:91%;top:55%;",
+        "name": "unit;blue/orbitalstrike"
+       },
+       {
+        "impath": "data/cards/blue/reload.png",
+        "width": "8%",
+        "style": "position:absolute;left:28%;top:55%;",
+        "name": "unit;blue/reload"
+       },
+       {
+        "impath": "data/cards/blue/relocate.png",
+        "width": "8%",
+        "style": "position:absolute;left:9.5%;top:55%;",
+        "name": "unit;blue/relocate"
+       },
+       {
+        "impath": "data/cards/blue/sentinels.png",
+        "width": "8%",
+        "style": "position:absolute;left:37%;top:31%;",
+        "name": "unit;blue/sentinels"
+       },
+       {
+        "impath": "data/cards/blue/sentinels_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:46%;top:5%;",
+        "name": "unit;blue/sentinels_spawner"
+       }
 ]
 }

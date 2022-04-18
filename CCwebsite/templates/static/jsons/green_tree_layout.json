@@ -1,4 +1,166 @@
 {
     "tree_layout": [
+    {
+        "impath": "data/cards/green/brratu.png",
+        "width": "8%",
+        "style": "position:absolute;left:82%;top:55%;",
+        "name": "unit;green/brratu"
+       },
+       {
+        "impath": "data/cards/green/entagling_roots.png",
+        "width": "8%",
+        "style": "position:absolute;left:10%;top:55%;",
+        "name": "unit;green/entagling_roots"
+       },
+       {
+        "impath": "data/cards/green/evolve_oracle.png",
+        "width": "8%",
+        "style": "position:absolute;left:91%;top:55%;",
+        "name": "unit;green/evolve_oracle"
+       },
+       {
+        "impath": "data/cards/green/evolve_thristle.png",
+        "width": "8%",
+        "style": "position:absolute;left:64%;top:31%;",
+        "name": "unit;green/evolve_thristle"
+       },
+       {
+        "impath": "data/cards/green/forest_guardian.png",
+        "width": "8%",
+        "style": "position:absolute;left:36.5%;top:31%;",
+        "name": "unit;green/forest_guardian"
+       },
+       {
+        "impath": "data/cards/green/giant_growth.png",
+        "width": "8%",
+        "style": "position:absolute;left:10%;top:31%;",
+        "name": "unit;green/giant_growth"
+       },
+       {
+        "impath": "data/cards/green/heart_of_the_forest.png",
+        "width": "8%",
+        "style": "position:absolute;left:46%;top:81%;",
+        "name": "unit;green/heart_of_the_forest"
+       },
+       {
+        "impath": "data/cards/green/heart_of_the_forest_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:46%;top:31%;",
+        "name": "unit;green/heart_of_the_forest_spawner"
+       },
+       {
+        "impath": "data/cards/green/mulch_digger.png",
+        "width": "8%",
+        "style": "position:absolute;left:82%;top:81%;",
+        "name": "unit;green/mulch_digger"
+       },
+       {
+        "impath": "data/cards/green/mulch_digger_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:82%;top:5%;",
+        "name": "unit;green/mulch_digger_spawner"
+       },
+       {
+        "impath": "data/cards/green/oracle.png",
+        "width": "8%",
+        "style": "position:absolute;left:64%;top:55%;",
+        "name": "unit;green/oracle"
+       },
+       {
+        "impath": "data/cards/green/oracle_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:91%;top:31%;",
+        "name": "unit;green/oracle_spawner"
+       },
+       {
+        "impath": "data/cards/green/pulse_of_the_forest.png",
+        "width": "8%",
+        "style": "position:absolute;left:28%;top:81%;",
+        "name": "unit;green/pulse_of_the_forest"
+       },
+       {
+        "impath": "data/cards/green/rootdood.png",
+        "width": "8%",
+        "style": "position:absolute;left:28%;top:55%;",
+        "name": "unit;green/rootdood"
+       },
+       {
+        "impath": "data/cards/green/rootdood_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:73%;top:31%;",
+        "name": "unit;green/rootdood_spawner"
+       },
+       {
+        "impath": "data/cards/green/rootling.png",
+        "width": "8%",
+        "style": "position:absolute;left:19%;top:5%;",
+        "name": "unit;green/rootling"
+       },
+       {
+        "impath": "data/cards/green/sapling_bush.png",
+        "width": "8%",
+        "style": "position:absolute;left:19%;top:31%;",
+        "name": "unit;green/sapling_bush"
+       },
+       {
+        "impath": "data/cards/green/rootling_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:19%;top:81%;",
+        "name": "unit;green/rootling_spawner"
+       },
+       {
+        "impath": "data/cards/green/sapling_charge.png",
+        "width": "8%",
+        "style": "position:absolute;left:82%;top:31%;",
+        "name": "unit;green/sapling_charge"
+       },
+       {
+        "impath": "data/cards/green/spore_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:73%;top:55%;",
+        "name": "unit;green/spore_spawner"
+       },
+       {
+        "impath": "data/cards/green/spore.png",
+        "width": "8%",
+        "style": "position:absolute;left:73%;top:5%;",
+        "name": "unit;green/spore"
+       },
+       {
+        "impath": "data/cards/green/thristles.png",
+        "width": "8%",
+        "style": "position:absolute;left:1%;top:42.5%;",
+        "name": "unit;green/thristles"
+       },
+       {
+        "impath": "data/cards/green/thristles_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:19%;top:55%;",
+        "name": "unit;green/thristles_spawner"
+       },
+       {
+        "impath": "data/cards/green/wisp.png",
+        "width": "8%",
+        "style": "position:absolute;left:55%;top:5%;",
+        "name": "unit;green/wisp"
+       },
+       {
+        "impath": "data/cards/green/wisp_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:55%;top:81%;",
+        "name": "unit;green/wisp_spawner"
+       },
+       {
+        "impath": "data/cards/green/woodwalker.png",
+        "width": "8%",
+        "style": "position:absolute;left:36.5%;top:55%;",
+        "name": "unit;green/woodwalker"
+       },
+       {
+        "impath": "data/cards/green/woodwalker_spawner.png",
+        "width": "8%",
+        "style": "position:absolute;left:28%;top:5%;",
+        "name": "unit;green/woodwalker_spawner"
+       }
 ]
 }

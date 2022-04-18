@@ -2,7 +2,7 @@ import json
 import os
 
 def process_deckbuilder_request(request):
-    context = json.load(open("templates/static/jsons/base_template_standart.json", "r"))
+    context = json.load(open("templates/static/jsons/deckbuilder_state_default.json", "r"))
     for key in request.session.keys():
         context[key] = request.session[key]
     new_action = request.GET.dict()
