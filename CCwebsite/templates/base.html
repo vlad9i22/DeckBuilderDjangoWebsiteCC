@@ -1,0 +1,25 @@
+
+<!DOCTYPE html> <!-- Используется html 5 версии -->
+{% load socialaccount %}
+<html lang="ru"> <!-- Язык сайта - русский -->
+  <head>    
+    {% include 'includes/head.html'%}
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/deckbuild">DeckBuilder</a>
+    {% if user.is_authenticated %}
+        <p>
+            Here are your saved decks.{{ user.socialaccount_set.all.0.extra_data.name }}
+        </p>
+    {% else %}
+        <p>
+            Login pls to see the content.
+        </p>
+    {% endif %}
+    <a href="{% provider_login_url 'google' %}">Login with Google</a>
+
+    <footer class="border-top text-center py-3">
+        {% include 'includes/footer.html'%}
+    </footer>
+  </body>
