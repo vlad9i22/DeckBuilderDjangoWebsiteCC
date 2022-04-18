@@ -1,67 +1,99 @@
 <!DOCTYPE html> <!-- Используется html 5 версии -->
-{% load socialaccount %}
 <html lang="ru"> <!-- Язык сайта - русский -->
   {% load static %}
   <head>    
     <meta charset="utf-8">
     <title>Mega DeckBuilder </title>
   </head>
-<<<<<<< HEAD
   <header class="page-header">
     {% include 'includes/head.html'%}
   </header>
   <style>
     body {
       background-image: url("{% static 'data/background/background.png' %}");
-     }
-     h1 {
-       color: #FFFFFF;
-     }
-     .button {
-       position: relative;
-     }
+    }
      .Background {
        position:relative;
        box-sizing: content-box;
        width: 100%;
      }
+     .col_table {
+       display: table;
+       width: 100%;
+     }
+     .column1 {
+       position: relative;
+       display: table-cell;
+       width: 4%;
+     }
+     .column2 {
+       position: relative;
+       display: table-cell;
+       width: 96%;
+     }
+     .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .first_deck {
+      position: absolute;
+      top: 12%;
+      left: 20%;
+    }
+    .second_deck {
+      position: absolute;
+      top: 62%;
+      left: 20%;
+    }
   </style>
   <form method="get">
     {% csrf_token %}
-    <div class="container" align="center">
-        <input type="image" src="{% static 'data/cards/' %}{{slot1}}" width=7.5% name="ChosenSlot;1">
-        <input type="image" src="{% static 'data/cards/' %}{{slot2}}" width=7.5% name="ChosenSlot;2">
-        <input type="image" src="{% static 'data/cards/' %}{{slot3}}" width=7.5% name="ChosenSlot;3">
-        <input type="image" src="{% static 'data/cards/' %}{{slot4}}" width=7.5% name="ChosenSlot;4">
-        <input type="image" src="{% static 'data/cards/' %}{{slot5}}" width=7.5% name="ChosenSlot;5">
-        <input type="image" src="{% static 'data/cards/' %}{{slot6}}" width=7.5% name="ChosenSlot;6">
-        <input type="image" src="{% static 'data/cards/' %}{{slot7}}" width=7.5% name="ChosenSlot;7">
-        <input type="image" src="{% static 'data/cards/' %}{{slot8}}" width=7.5% name="ChosenSlot;8">
-        <input type="image" src="{% static 'data/cards/' %}{{slot9}}" width=7.5% name="ChosenSlot;9">
-        <input type="image" src="{% static 'data/cards/' %}{{slot10}}" width=7.5% name="ChosenSlot;10">
-        <input type="image" src="{% static 'data/cards/' %}{{slot11}}" width=7.5% name="ChosenSlot;11">
-        <input type="image" src="{% static 'data/cards/' %}{{slot12}}" width=7.5% name="ChosenSlot;12">
-    </div>
-    <div class="container" align="center">
-      <input type="image" src="{% static 'data/cards/' %}{{slot13}}" width=7.5% name="ChosenSlot;13">
-      <input type="image" src="{% static 'data/cards/' %}{{slot14}}" width=7.5% name="ChosenSlot;14">
-      <input type="image" src="{% static 'data/cards/' %}{{slot15}}" width=7.5% name="ChosenSlot;15">
-      <input type="image" src="{% static 'data/cards/' %}{{slot16}}" width=7.5% name="ChosenSlot;16">
-      <input type="image" src="{% static 'data/cards/' %}{{slot17}}" width=7.5% name="ChosenSlot;17">
-      <input type="image" src="{% static 'data/cards/' %}{{slot18}}" width=7.5% name="ChosenSlot;18">
-      <input type="image" src="{% static 'data/cards/' %}{{slot19}}" width=7.5% name="ChosenSlot;19">
-      <input type="image" src="{% static 'data/cards/' %}{{slot20}}" width=7.5% name="ChosenSlot;20">
-      <input type="image" src="{% static 'data/cards/' %}{{slot21}}" width=7.5% name="ChosenSlot;21">
-      <input type="image" src="{% static 'data/cards/' %}{{slot22}}" width=7.5% name="ChosenSlot;22">
-      <input type="image" src="{% static 'data/cards/' %}{{slot23}}" width=7.5% name="ChosenSlot;23">
-      <input type="image" src="{% static 'data/cards/' %}{{slot24}}" width=7.5% name="ChosenSlot;24">
+    <div class="col-table">
+      <div class="column1">
+        {% if deck_switch == 0 %}
+          <input type="image" src="{% static 'data/buttons/red_switcher.png' %}" class="first_deck" width=80% name="switcher;0">
+        {% else %}
+          <input type="image" src="{% static 'data/buttons/red_switcher.png' %}" class="second_deck" width=80% name="switcher;1">
+        {% endif%}
+      </div>
+      <div class="column2">
+        <div class="container" align="center">
+            <input type="image" src="{% static 'data/cards/' %}{{slot1}}" width=7.5% name="chosenslot;1">
+            <input type="image" src="{% static 'data/cards/' %}{{slot2}}" width=7.5% name="chosenslot;2">
+            <input type="image" src="{% static 'data/cards/' %}{{slot3}}" width=7.5% name="chosenslot;3">
+            <input type="image" src="{% static 'data/cards/' %}{{slot4}}" width=7.5% name="chosenslot;4">
+            <input type="image" src="{% static 'data/cards/' %}{{slot5}}" width=7.5% name="chosenslot;5">
+            <input type="image" src="{% static 'data/cards/' %}{{slot6}}" width=7.5% name="chosenslot;6">
+            <input type="image" src="{% static 'data/cards/' %}{{slot7}}" width=7.5% name="chosenslot;7">
+            <input type="image" src="{% static 'data/cards/' %}{{slot8}}" width=7.5% name="chosenslot;8">
+            <input type="image" src="{% static 'data/cards/' %}{{slot9}}" width=7.5% name="chosenslot;9">
+            <input type="image" src="{% static 'data/cards/' %}{{slot10}}" width=7.5% name="chosenslot;10">
+            <input type="image" src="{% static 'data/cards/' %}{{slot11}}" width=7.5% name="chosenslot;11">
+            <input type="image" src="{% static 'data/cards/' %}{{slot12}}" width=7.5% name="chosenslot;12">
+        </div>
+        <div class="container" align="center">
+          <input type="image" src="{% static 'data/cards/' %}{{slot13}}" width=7.5% name="chosenslot;13">
+          <input type="image" src="{% static 'data/cards/' %}{{slot14}}" width=7.5% name="chosenslot;14">
+          <input type="image" src="{% static 'data/cards/' %}{{slot15}}" width=7.5% name="chosenslot;15">
+          <input type="image" src="{% static 'data/cards/' %}{{slot16}}" width=7.5% name="chosenslot;16">
+          <input type="image" src="{% static 'data/cards/' %}{{slot17}}" width=7.5% name="chosenslot;17">
+          <input type="image" src="{% static 'data/cards/' %}{{slot18}}" width=7.5% name="chosenslot;18">
+          <input type="image" src="{% static 'data/cards/' %}{{slot19}}" width=7.5% name="chosenslot;19">
+          <input type="image" src="{% static 'data/cards/' %}{{slot20}}" width=7.5% name="chosenslot;20">
+          <input type="image" src="{% static 'data/cards/' %}{{slot21}}" width=7.5% name="chosenslot;21">
+          <input type="image" src="{% static 'data/cards/' %}{{slot22}}" width=7.5% name="chosenslot;22">
+          <input type="image" src="{% static 'data/cards/' %}{{slot23}}" width=7.5% name="chosenslot;23">
+          <input type="image" src="{% static 'data/cards/' %}{{slot24}}" width=7.5% name="chosenslot;24">
+        </div>
+      </div>
     </div>
     <div class="container" align="right">
-      <input type="image" src="{% static 'data/buttons/black_button.png' %}" width=4% name="Button;Black">
-      <input type="image" src="{% static 'data/buttons/blue_button.png' %}" width=4% name="Button;Blue">
-      <input type="image" src="{% static 'data/buttons/crystal_button.png' %}" width=4% name="Button;Crystal">
-      <input type="image" src="{% static 'data/buttons/green_button.png' %}" width=4% name="Button;Green">
-      <input type="image" src="{% static 'data/buttons/white_button.png' %}" width=4% name="Button;White">
+      <input type="image" src="{% static 'data/buttons/black_button.png' %}" width=4% name="button;black">
+      <input type="image" src="{% static 'data/buttons/blue_button.png' %}" width=4% name="button;blue">
+      <input type="image" src="{% static 'data/buttons/crystal_button.png' %}" width=4% name="button;crystal">
+      <input type="image" src="{% static 'data/buttons/green_button.png' %}" width=4% name="button;green">
+      <input type="image" src="{% static 'data/buttons/white_button.png' %}" width=4% name="button;white">
     </div>
     <div class="Background" align="center">
       <img src="{% static 'data/makets/' %}{{maket_name}}" width="100%">
@@ -75,23 +107,3 @@
   </footer>
   <div class="main_wrapper">
   </div>
-=======
-  <body>
-    <a href="/">Home</a>
-    <a href="/deckbuild">DeckBuilder</a>
-    {% if user.is_authenticated %}
-        <p>
-            Here are your saved decks.{{ user.socialaccount_set.all.0.extra_data.name }}
-        </p>
-    {% else %}
-        <p>
-            Login pls to see the content.
-        </p>
-    {% endif %}
-    <a href="{% provider_login_url 'google' %}">Login with Google</a>
-
-    <footer class="border-top text-center py-3">
-        {% include 'includes/footer.html'%}
-    </footer>
-  </body>
->>>>>>> 4adb0b88b4db2becb5778bedf31a69c570c823ff
