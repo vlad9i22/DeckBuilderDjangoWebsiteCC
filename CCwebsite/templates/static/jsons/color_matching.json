@@ -1,0 +1,7 @@
+{
+    "black": ["full_tree_black.png", "black_tree_layout.json"],
+    "green": ["full_tree_green.png", "green_tree_layout.json"],
+    "crystal": ["full_tree_crystal.png", "crystal_tree_layout.json"],
+    "blue": ["full_tree_blue.png", "blue_tree_layout.json"],
+    "white": ["full_tree_white.png", "white_tree_layout.json"]
+}

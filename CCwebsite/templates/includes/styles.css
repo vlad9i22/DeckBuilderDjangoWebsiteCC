@@ -1,0 +1,14 @@
+body {
+    background-image: url("./data/background/background.png");
+   }
+   h1 {
+     color: #FFFFFF;
+   }
+   .button {
+     position: relative;
+   }
+   .Background {
+     position:relative;
+     box-sizing: content-box;
+     width: 100%;
+   }
