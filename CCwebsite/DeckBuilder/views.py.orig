@@ -1,24 +1,29 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import Context
 from httplib2 import Http
 from glob import glob
 import json
 from DeckBuilder.tools import process_deckbuilder_request
 
-
+import requests
 # Create your views here.
 def index(request):
-    return render(request, './base.html')
+    return HttpResponse("MAinPAGE")
 
 
 def deck_builder(request):
+<<<<<<< HEAD
     context = process_deckbuilder_request(request)
     if request.method == "GET":
         pass
     else:
         return HttpResponse("POSHELWON")
-    return render(request, './DeckBuilderPage.html', context=context)
+    return render(request, './base.html', context=context)
 
 def request_page(request):
     print("hi")
     return HttpResponse("buttonClick")
+=======
+    return HttpResponse("This is where you build your decks")
+>>>>>>> 4adb0b88b4db2becb5778bedf31a69c570c823ff
