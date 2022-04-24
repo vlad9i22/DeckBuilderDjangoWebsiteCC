@@ -1,7 +1,6 @@
 import json
 import os
-from copy import copy
-from turtle import color
+
 
 def add_color(count_colors: dict, unit_name: str) -> None:
     '''
@@ -29,11 +28,12 @@ def is_proper_slot_idx(key: str, deck_switch: int) -> bool:
     '''
     key_id = int(key.split("slot")[-1])
     return (deck_switch == 1 and key_id >= 13) or (deck_switch == 0 and key_id < 13)
-    
+
 
 def copy_session_information(context: dict, request) -> list:
     '''
     Moves session information to context dictionary and collects unit color information for future processing
+    
     Return value is the list of 2 elements: 1) dict -> number of each color in deck
                                             2) int  -> number of distinct colors in deck
     '''
@@ -64,7 +64,7 @@ def process_unit_button(button_name: list, context: dict, request, color_info: l
     unit_type, unit_name = button_name[1].split("/")
     color_dict, ncolors = color_info
     if ncolors >= 2 and color_dict[unit_type] == 0:             # Max available number of colors already
-        return    
+        return
     if context["deck_switch"]:
         lb, rb = 13, 25
     else:
@@ -80,7 +80,7 @@ def process_slot_button(button_name: list, context: dict, request) -> None:
     '''
     Processes click on any slot button (button name contains "slot")
     '''
-    #if is_proper_slot_idx("slot" + button_name[1], request.session["deck_switch"]):
+    # if is_proper_slot_idx("slot" + button_name[1], request.session["deck_switch"]):
     context["slot" + button_name[1]] = "empty.jpg"
     request.session["slot" + button_name[1]] = "empty.jpg"
 
