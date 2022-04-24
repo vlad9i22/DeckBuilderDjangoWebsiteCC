@@ -13,6 +13,7 @@ The main part of the game is creation of a deck to play in 2vs2 mode. But there'
 2) Save deck &#9744;
 3) Quick deck insertion from png (Take picture of a deck ingame -> Insert to website -> PROFIT) &#9744;
 4) Card description on hovering (If ingame files could be converted in normal format.) &#9744;
+5) Google auth feature. &#9745;
 ##### Additional features:
 1) Ability to post decks.
 2) Ability to discuss decks.
