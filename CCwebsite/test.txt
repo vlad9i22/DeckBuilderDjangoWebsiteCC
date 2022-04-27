@@ -1,0 +1,12 @@
+11;blue/gatling_spawner.png
+0A;empty.jpg
+0A;empty.jpg
+0A;empty.jpg
+0A;empty.jpg
+0A;empty.jpg
+0A;empty.jpg
+0A;empty.jpg
+0A;empty.jpg
+0A;empty.jpg
+0A;empty.jpg
+0A;empty.jpg
