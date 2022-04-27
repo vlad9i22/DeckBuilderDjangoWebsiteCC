@@ -1,5 +1,9 @@
 import json
 import os
+import gettext
+
+translation = gettext.translation('tools', 'DeckBuilder/translation')
+_ = translation.gettext
 
 
 def sort_deck(context: dict) -> None:
@@ -144,6 +148,7 @@ def process_deckbuilder_request(request):
     '''
     Processes and parses deckbuild webpage request
     '''
+    message = _("hello")
     context = json.load(open("templates/static/jsons/deckbuilder_state_default.json", "r"))
     if "deck_switch" not in request.session.keys():
         request.session["deck_switch"] = 0
