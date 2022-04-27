@@ -2,9 +2,6 @@ import json
 import os
 import gettext
 
-translation = gettext.translation('tools', 'DeckBuilder/translation')
-_ = translation.gettext
-
 
 def sort_deck(context: dict) -> None:
     '''
@@ -144,11 +141,17 @@ def process_clean_button(context: dict) -> None:
         context["slot" + str(i)] = "empty.jpg"
 
 
+def process_flag_button(button_name: list, context: dict) -> None:
+    '''
+    Processes site localization button
+    '''
+    context["flag"] = button_name[1]
+
+
 def process_deckbuilder_request(request):
     '''
     Processes and parses deckbuild webpage request
     '''
-    message = _("hello")
     context = json.load(open("templates/static/jsons/deckbuilder_state_default.json", "r"))
     if "deck_switch" not in request.session.keys():
         request.session["deck_switch"] = 0
@@ -168,5 +171,12 @@ def process_deckbuilder_request(request):
         process_switcher_button(button_name, context)
     elif button_name[0] == "clear":
         process_clean_button(context)
+    elif button_name[0] == "flag":
+        with open("test.txt", "w") as f:
+            f.write(button_name[1])
+        process_flag_button(button_name, context)
+    translation = gettext.translation('tools', 'DeckBuilder/translation', [context["flag"]])
+    _ = translation.gettext
+    context["title"] = _("hello")
     copy_context_information(context, request)
     return context
