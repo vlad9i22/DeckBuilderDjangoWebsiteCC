@@ -7,6 +7,7 @@ from shutil import copytree, rmtree
 def get_all_file_names(dir_name: str) -> list:
     """
     Recursively gets all file names from given directory
+
     Args:
         dir_name (str): Directory name
     Returns:
@@ -25,6 +26,7 @@ def get_all_file_names(dir_name: str) -> list:
 def process_images(new_size: tuple) -> None:
     """
     Transforms raw image data to processed unit icons. REMOVES ./data directory
+
     Args:
         new_size (tuple): Size of cleaned images
     """

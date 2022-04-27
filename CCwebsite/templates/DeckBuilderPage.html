@@ -15,6 +15,7 @@
     .Background {
       position:relative;
       box-sizing: content-box;
+      height: 60vh;
     }
     img {
       max-width: 100%;
@@ -100,7 +101,6 @@
       <input type="image" src="{% static 'data/buttons/white_button.png' %}" width=4% name="button;white">
     </div>
     <div class="Background" align="center">
-      <img src="{% static 'data/makets/' %}{{maket_name}}">
       {% for entry in tree_layout %}
         <input type="image" src="/static/{{entry.impath}}" width={{entry.width}} style={{entry.style}} name={{entry.name}}>
       {% endfor %}
