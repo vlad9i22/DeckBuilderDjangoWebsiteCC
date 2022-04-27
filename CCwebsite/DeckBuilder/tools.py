@@ -141,15 +141,18 @@ def process_clean_button(context: dict) -> None:
         context["slot" + str(i)] = "empty.jpg"
 
 
+def process_flag_button(button_name: list, context: dict) -> None:
+    '''
+    Processes site localization button
+    '''
+    context["flag"] = button_name[1]
+
+
 def process_deckbuilder_request(request):
     '''
     Processes and parses deckbuild webpage request
     '''
-    translation = gettext.translation('tools', 'DeckBuilder/translation', ['ru'])
-    _ = translation.gettext
     context = json.load(open("templates/static/jsons/deckbuilder_state_default.json", "r"))
-    context["title"] = _("hello")
-    request.session["title"] = _("hello")
     if "deck_switch" not in request.session.keys():
         request.session["deck_switch"] = 0
     color_info = copy_session_information(context, request)
@@ -168,5 +171,12 @@ def process_deckbuilder_request(request):
         process_switcher_button(button_name, context)
     elif button_name[0] == "clear":
         process_clean_button(context)
+    elif button_name[0] == "flag":
+        with open("test.txt", "w") as f:
+            f.write(button_name[1])
+        process_flag_button(button_name, context)
+    translation = gettext.translation('tools', 'DeckBuilder/translation', [context["flag"]])
+    _ = translation.gettext
+    context["title"] = _("hello")
     copy_context_information(context, request)
     return context

@@ -15,7 +15,7 @@
     .Background {
       position:relative;
       box-sizing: content-box;
-      height: 60vh;
+      height: 55vh;
     }
     img {
       max-width: 100%;
@@ -33,7 +33,12 @@
     .column2 {
       position: relative;
       display: table-cell;
-      width: 96%;
+      width: 94%;
+    }
+    .column3 {
+      position: relative;
+      display: table-cell;
+      width: 2%;
     }
     .row:after {
     content: "";
@@ -49,6 +54,14 @@
     position: absolute;
     top: 62%;
     left: 20%;
+  }
+  .ruflag {
+    position: absolute;
+    top: 0%;
+  }
+  .enflag {
+    position: absolute;
+    top: 10%;
   }
   </style>
   <form method="get">
@@ -90,6 +103,10 @@
           <input type="image" src="{% static 'data/cards/' %}{{slot23}}" width=7.5% name="chosenslot;23">
           <input type="image" src="{% static 'data/cards/' %}{{slot24}}" width=7.5% name="chosenslot;24">
         </div>
+      </div>
+      <div class="column3">
+        <input type="image" src="{% static 'data/buttons/ru.jpg' %}" position="absolute" class="ruflag" width=100% name="flag;ru">
+        <input type="image" src="{% static 'data/buttons/en.png' %}" position="absolute" class="enflag" width=100% name="flag;en">
       </div>
     </div>
     <div class="container" align="right">
