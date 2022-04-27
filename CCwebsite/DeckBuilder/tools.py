@@ -2,6 +2,25 @@ import json
 import os
 
 
+def sort_deck(context: dict) -> None:
+    '''
+    Sorts deck according to the rules of the game
+    '''
+    unit_order = json.load(open("templates/static/jsons/sort_order.json", "r"))
+    deck_slots = []
+    if context["deck_switch"]:
+        lb, rb = 13, 25
+    else:
+        lb, rb = 1, 13
+    for i in range(lb, rb):
+        is_spawner = context["slot" + str(i)].count("spawner")
+        uorder = unit_order[context["slot" + str(i)]]
+        deck_slots.append([is_spawner, uorder, context["slot" + str(i)]])
+    deck_slots.sort()
+    for i in range(lb, rb):
+        context["slot" + str(i)] = deck_slots[i - lb][-1]
+
+
 def add_color(count_colors: dict, unit_name: str) -> None:
     '''
     Check if color needs to be counted for CC rules
@@ -33,7 +52,7 @@ def is_proper_slot_idx(key: str, deck_switch: int) -> bool:
 def copy_session_information(context: dict, request) -> list:
     '''
     Moves session information to context dictionary and collects unit color information for future processing
-    
+
     Return value is the list of 2 elements: 1) dict -> number of each color in deck
                                             2) int  -> number of distinct colors in deck
     '''
@@ -47,6 +66,14 @@ def copy_session_information(context: dict, request) -> list:
     return [count_colors, ncolors_in_deck]
 
 
+def copy_context_information(context: dict, request) -> None:
+    '''
+    Moves session update to session
+    '''
+    for key in context:
+        request.session[key] = context[key]
+
+
 def get_clickedbutton_name(request_dict: dict) -> str:
     '''
     Gets the name of the button which was pressed by user
@@ -57,7 +84,7 @@ def get_clickedbutton_name(request_dict: dict) -> str:
     return key_ids[0].split(".")[0].split(";")
 
 
-def process_unit_button(button_name: list, context: dict, request, color_info: list) -> None:
+def process_unit_button(button_name: list, context: dict, color_info: list) -> None:
     '''
     Processes click on any unit button (button name contains "unit")
     '''
@@ -72,33 +99,29 @@ def process_unit_button(button_name: list, context: dict, request, color_info: l
     for i in range(lb, rb):
         if context["slot" + str(i)] == "empty.jpg":
             context["slot" + str(i)] = os.path.join(unit_type, unit_name) + ".png"
-            request.session["slot" + str(i)] = os.path.join(unit_type, unit_name) + ".png"
             break
 
 
-def process_slot_button(button_name: list, context: dict, request) -> None:
+def process_slot_button(button_name: list, context: dict) -> None:
     '''
     Processes click on any slot button (button name contains "slot")
     '''
     # if is_proper_slot_idx("slot" + button_name[1], request.session["deck_switch"]):
     context["slot" + button_name[1]] = "empty.jpg"
-    request.session["slot" + button_name[1]] = "empty.jpg"
 
 
-def process_button_button(button_name: list, context: dict, request) -> None:
+def process_button_button(button_name: list, context: dict) -> None:
     '''
     Processes click on any button button (button name contains "button")
     '''
     color = button_name[1]
     color_matching = json.load(open("templates/static/jsons/color_matching.json", "r"))
     context["maket_name"] = color_matching[color][0]
-    request.session["maket_name"] = color_matching[color][0]
     tree_layout = json.load(open(f"templates/static/jsons/{color_matching[color][1]}", "r"))
     context["tree_layout"] = tree_layout["tree_layout"]
-    request.session["tree_layout"] = tree_layout["tree_layout"]
 
 
-def process_switcher_button(button_name: list, context: dict, request) -> None:
+def process_switcher_button(button_name: list, context: dict) -> None:
     '''
     Processes click on switcher button (button name contains "switcher")
     '''
@@ -107,7 +130,14 @@ def process_switcher_button(button_name: list, context: dict, request) -> None:
     else:
         switch_val = 1
     context["deck_switch"] = switch_val
-    request.session["deck_switch"] = switch_val
+
+
+def process_clean_button(context: dict) -> None:
+    '''
+    Processes click on clear button (button name contains "switcher"). Delete all units from slots
+    '''
+    for i in range(1, 25):
+        context["slot" + str(i)] = "empty.jpg"
 
 
 def process_deckbuilder_request(request):
@@ -122,11 +152,16 @@ def process_deckbuilder_request(request):
     if button_name is None:    # No changes provided
         return context
     if button_name[0] == "unit":
-        process_unit_button(button_name, context, request, color_info)
+        process_unit_button(button_name, context, color_info)
+        sort_deck(context)
     elif button_name[0] == "chosenslot":
-        process_slot_button(button_name, context, request)
+        process_slot_button(button_name, context)
+        sort_deck(context)
     elif button_name[0] == "button":
-        process_button_button(button_name, context, request)
+        process_button_button(button_name, context)
     elif button_name[0] == "switcher":
-        process_switcher_button(button_name, context, request)
+        process_switcher_button(button_name, context)
+    elif button_name[0] == "clear":
+        process_clean_button(context)
+    copy_context_information(context, request)
     return context

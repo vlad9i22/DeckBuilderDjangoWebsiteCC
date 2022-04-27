@@ -1,8 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from httplib2 import Http
-from glob import glob
-import json
 from DeckBuilder.tools import process_deckbuilder_request
 
 
@@ -18,6 +15,7 @@ def deck_builder(request):
     else:
         return HttpResponse("POSHELWON")
     return render(request, './DeckBuilderPage.html', context=context)
+
 
 def request_page(request):
     print("hi")

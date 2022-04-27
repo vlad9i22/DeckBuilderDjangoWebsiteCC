@@ -12,17 +12,18 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import json
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
-
+private_settings = json.load(open("CCwebsite/private_settings.json", "r"))
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-t@gn&u$f6(npvsf!v#uhy7%#e_kak**ki^(-%)oxzk%piscbw9'
+SECRET_KEY = private_settings["SECRET_KEY"]
 # Google auth stuff
-SITE_ID = 2
+SITE_ID = private_settings["SITE_ID"]
 LOGIN_REDIRECT_URL = '/'
 
 # Additional configuration settings
@@ -152,7 +153,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = './'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'templates/static'),]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'templates/static'), ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

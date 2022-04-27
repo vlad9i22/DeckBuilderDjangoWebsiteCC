@@ -12,40 +12,43 @@
     body {
       background-image: url("{% static 'data/background/background.png' %}");
     }
-     .Background {
-       position:relative;
-       box-sizing: content-box;
-       width: 100%;
-     }
-     .col_table {
-       display: table;
-       width: 100%;
-     }
-     .column1 {
-       position: relative;
-       display: table-cell;
-       width: 4%;
-     }
-     .column2 {
-       position: relative;
-       display: table-cell;
-       width: 96%;
-     }
-     .row:after {
-      content: "";
+    .Background {
+      position:relative;
+      box-sizing: content-box;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .col_table {
       display: table;
-      clear: both;
+      width: 100%;
     }
-    .first_deck {
-      position: absolute;
-      top: 12%;
-      left: 20%;
+    .column1 {
+      position: relative;
+      display: table-cell;
+      width: 4%;
     }
-    .second_deck {
-      position: absolute;
-      top: 62%;
-      left: 20%;
+    .column2 {
+      position: relative;
+      display: table-cell;
+      width: 96%;
     }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .first_deck {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+  }
+  .second_deck {
+    position: absolute;
+    top: 62%;
+    left: 20%;
+  }
   </style>
   <form method="get">
     {% csrf_token %}
@@ -89,6 +92,7 @@
       </div>
     </div>
     <div class="container" align="right">
+      <input type="image" src="{% static 'data/buttons/clear.png' %}" width=6% align="left" name="clear;0">
       <input type="image" src="{% static 'data/buttons/black_button.png' %}" width=4% name="button;black">
       <input type="image" src="{% static 'data/buttons/blue_button.png' %}" width=4% name="button;blue">
       <input type="image" src="{% static 'data/buttons/crystal_button.png' %}" width=4% name="button;crystal">
@@ -96,7 +100,7 @@
       <input type="image" src="{% static 'data/buttons/white_button.png' %}" width=4% name="button;white">
     </div>
     <div class="Background" align="center">
-      <img src="{% static 'data/makets/' %}{{maket_name}}" width="100%">
+      <img src="{% static 'data/makets/' %}{{maket_name}}">
       {% for entry in tree_layout %}
         <input type="image" src="/static/{{entry.impath}}" width={{entry.width}} style={{entry.style}} name={{entry.name}}>
       {% endfor %}
