@@ -5,3 +5,4 @@ django
 django-allauth
 social-auth-app-django
 pytest
+flake8
