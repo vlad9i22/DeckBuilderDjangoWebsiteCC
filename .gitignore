@@ -135,3 +135,7 @@ CCwebsite/CCwebsite/private_settings.json
 .doit.db.bak
 .doit.db.dat
 .doit.db.dir
+
+
+#orig
+*.py.orig
