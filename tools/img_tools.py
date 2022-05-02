@@ -13,7 +13,7 @@ def get_all_file_names(dir_name: str) -> list:
     Returns:
         list: Names of all files in directory
     """
-    all_names = sorted(glob(path.join(dir_name, "*")))
+    all_names = sorted(glob(path.join(dir_name, "*.png")))
     collected_names = []
     for name in all_names:
         if path.isfile(name):
