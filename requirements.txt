@@ -7,3 +7,6 @@ social-auth-app-django
 pytest
 flake8
 doit
+build
+wheel
+pydocstyle

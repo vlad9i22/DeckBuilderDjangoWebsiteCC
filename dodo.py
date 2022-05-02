@@ -3,7 +3,7 @@ from doit.tools import run_once
 
 
 DOIT_CONFIG = {'default_tasks':
-               ['docs', 'babel', 'migrate', 'private_settings', 'tests']}
+               ['docs', 'babel', 'private_settings', 'migrate', 'tests']}
 
 
 def task_docs():

@@ -172,8 +172,6 @@ def process_deckbuilder_request(request):
     elif button_name[0] == "clear":
         process_clean_button(context)
     elif button_name[0] == "flag":
-        with open("test.txt", "w") as f:
-            f.write(button_name[1])
         process_flag_button(button_name, context)
     translation = gettext.translation('tools', 'DeckBuilder/translation', [context["flag"]])
     _ = translation.gettext
