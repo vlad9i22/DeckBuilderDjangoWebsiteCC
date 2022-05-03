@@ -9,7 +9,8 @@ Welcome to CCDeckBuilder's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
+   
+    Setting everything up <setting_up.rst>
     Image manipulation tools <tools_docs.rst>
     Deck and session manipulation tools <DeckManipulations.rst>
 
