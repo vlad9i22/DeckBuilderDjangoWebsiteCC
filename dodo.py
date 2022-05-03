@@ -1,4 +1,3 @@
-import os
 from doit.tools import run_once
 
 
