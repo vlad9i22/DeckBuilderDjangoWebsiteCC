@@ -2,163 +2,163 @@
     "tree_layout": [
     {
         "impath": "data/cards/black/bane.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:19%;top:5%;",
         "name": "unit;black/bane"
        },
        {
         "impath": "data/cards/black/bane_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:37%;top:31%;",
         "name": "unit;black/bane_spawner"
        },
        {
         "impath": "data/cards/black/deep_freeze.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:45.5%;top:55%;",
         "name": "unit;black/deep_freeze"
        },
        {
         "impath": "data/cards/black/freeze.png",
-        "width": "8%",
-        "style": "position:absolute;left:28%;top:55%;",
+        "width": "6.5%",
+        "style": "position:absolute;left:26.5%;top:55%;",
         "name": "unit;black/freeze"
        },
        {
         "impath": "data/cards/black/frenzy.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:10%;top:31%;",
         "name": "unit;black/frenzy"
        },
        {
         "impath": "data/cards/black/frost_arrow.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:10%;top:55%;",
         "name": "unit;black/frost_arrow"
        },
        {
         "impath": "data/cards/black/frostgoyle_fountain.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:64%;top:81%;",
         "name": "unit;black/frostgoyle_fountain"
        },
        {
         "impath": "data/cards/black/frostgoyles.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:55%;top:5%;",
         "name": "unit;black/frostgoyles"
        },
        {
         "impath": "data/cards/black/frostgoyles_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:55%;top:81%;",
         "name": "unit;black/frostgoyles_spawner"
        },
        {
         "impath": "data/cards/black/frostworm.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:1%;top:42.5%;",
         "name": "unit;black/frostworm"
        },
        {
         "impath": "data/cards/black/frostworm_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:19%;top:55%;",
         "name": "unit;black/frostworm_spawner"
        },
        {
         "impath": "data/cards/black/lich.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:55%;top:56%;",
         "name": "unit;black/lich"
        },
        {
         "impath": "data/cards/black/lich_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:64%;top:31%;",
         "name": "unit;black/lich_spawner"
        },
        {
         "impath": "data/cards/black/mirror_slime.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:73%;top:55%;",
         "name": "unit;black/mirror_slime"
        },
        {
         "impath": "data/cards/black/mirror_slime_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:82%;top:31%;",
         "name": "unit;black/mirror_slime_spawner"
        },
        {
         "impath": "data/cards/black/shatter_ice.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:46%;top:81%;",
         "name": "unit;black/shatter_ice"
        },
        {
         "impath": "data/cards/black/skeleton_archers.png",
-        "width": "8%",
-        "style": "position:absolute;left:28%;top:31%;",
+        "width": "6.5%",
+        "style": "position:absolute;left:26.5%;top:31%;",
         "name": "unit;black/skeleton_archers"
        },
        {
         "impath": "data/cards/black/skeleton_archers_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:37%;top:81%;",
         "name": "unit;black/skeleton_archers_spawner"
        },
        {
         "impath": "data/cards/black/skeletons.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:19%;top:81%;",
         "name": "unit;black/skeletons"
        },
        {
         "impath": "data/cards/black/skeletons_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:19%;top:31%;",
         "name": "unit;black/skeletons_spawner"
        },
        {
         "impath": "data/cards/black/soul_alter.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:91%;top:5%;",
         "name": "unit;black/soul_alter"
        },
        {
         "impath": "data/cards/black/soul_cauldron.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:37%;top:5%;",
         "name": "unit;black/soul_cauldron"
        },
        {
         "impath": "data/cards/black/soul_cauldron_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:36.5%;top:55%;",
         "name": "unit;black/soul_cauldron_spawner"
        },
        {
         "impath": "data/cards/black/soul_maelstorm.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:46%;top:5%;",
         "name": "unit;black/soul_maelstorm"
        },
        {
         "impath": "data/cards/black/tyrus.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:73%;top:5%;",
         "name": "unit;black/tyrus"
        },
        {
         "impath": "data/cards/black/vecra.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:82%;top:81%;",
         "name": "unit;black/vecra"
        },
        {
         "impath": "data/cards/black/void_miasma.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:91%;top:81%;",
         "name": "unit;black/void_miasma"
        }

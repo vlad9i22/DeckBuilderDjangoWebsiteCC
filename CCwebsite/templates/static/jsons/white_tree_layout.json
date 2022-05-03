@@ -2,157 +2,157 @@
     "tree_layout": [
     {
         "impath": "data/cards/white/archers.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:19%;top:5%;",
         "name": "unit;white/archers"
        },
        {
         "impath": "data/cards/white/archers_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:19%;top:55%;",
         "name": "unit;white/archers_spawner"
        },
        {
         "impath": "data/cards/white/hail_of_arrows.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:37%;top:5%;",
         "name": "unit;white/hail_of_arrows"
        },
        {
         "impath": "data/cards/white/light_pulse.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:10%;top:55%;",
         "name": "unit;white/light_pulse"
        },
        {
         "impath": "data/cards/white/lothar.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:73%;top:55%;",
         "name": "unit;white/lothar"
        },
        {
         "impath": "data/cards/white/monument_of_light.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:64%;top:5%;",
         "name": "unit;white/monument_of_light"
        },
        {
         "impath": "data/cards/white/promise_of_life.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:91%;top:31%;",
         "name": "unit;white/promise_of_life"
        },
        {
         "impath": "data/cards/white/avengers.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:55%;top:31%;",
         "name": "unit;white/avengers"
        },
        {
         "impath": "data/cards/white/avengers_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:64%;top:55%;",
         "name": "unit;white/avengers_spawner"
        },
        {
         "impath": "data/cards/white/balista.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:55%;top:55%;",
         "name": "unit;white/balista"
        },
        {
         "impath": "data/cards/white/balista_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:64%;top:31%;",
         "name": "unit;white/balista_spawner"
        },
        {
         "impath": "data/cards/white/footmen.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:1%;top:42.5%;",
         "name": "unit;white/footmen"
        },
        {
         "impath": "data/cards/white/footmen_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:19%;top:31%;",
         "name": "unit;white/footmen_spawner"
        },
        {
         "impath": "data/cards/white/heavy_gunner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:46%;top:5%;",
         "name": "unit;white/heavy_gunner"
        },
        {
         "impath": "data/cards/white/heavy_gunner_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:46%;top:55%;",
         "name": "unit;white/heavy_gunner_spawner"
        },
        {
         "impath": "data/cards/white/selga.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:73%;top:31%;",
         "name": "unit;white/selga"
        },
        {
         "impath": "data/cards/white/marksman.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:82%;top:55%;",
         "name": "unit;white/marksman"
        },
        {
         "impath": "data/cards/white/marksman_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:82%;top:31%;",
         "name": "unit;white/marksman_spawner"
        },
        {
         "impath": "data/cards/white/monk.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:19%;top:81%;",
         "name": "unit;white/monk"
        },
        {
         "impath": "data/cards/white/monk_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:46%;top:31%;",
         "name": "unit;white/monk_spawner"
        },
        {
         "impath": "data/cards/white/priest.png",
-        "width": "8%",
-        "style": "position:absolute;left:28%;top:31%;",
+        "width": "6.5%",
+        "style": "position:absolute;left:26.5%;top:31%;",
         "name": "unit;white/priest"
        },
        {
         "impath": "data/cards/white/shields_up.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:10%;top:31%;",
         "name": "unit;white/shields_up"
        },
        {
         "impath": "data/cards/white/priest_spawner.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:37%;top:81%;",
         "name": "unit;white/priest_spawner"
        },
        {
         "impath": "data/cards/white/solar_flare.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:64%;top:81%;",
         "name": "unit;white/solar_flare"
        },
        {
         "impath": "data/cards/white/surge_of_light.png",
-        "width": "8%",
-        "style": "position:absolute;left:28%;top:55%;",
+        "width": "6.5%",
+        "style": "position:absolute;left:26.5%;top:55%;",
         "name": "unit;white/surge_of_light"
        },
        {
         "impath": "data/cards/white/watchtower.png",
-        "width": "8%",
+        "width": "6.5%",
         "style": "position:absolute;left:91%;top:55%;",
         "name": "unit;white/watchtower"
        }
