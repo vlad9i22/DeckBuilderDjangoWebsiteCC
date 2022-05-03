@@ -1,4 +1,3 @@
-import os
 from doit.tools import run_once
 
 
@@ -40,6 +39,7 @@ def task_private_settings():
 
 
 def task_wheel():
+    """Generates wheel distribution"""
     return {
         'actions': ['''python -m build -w'''],
         'task_dep': ["babel"]

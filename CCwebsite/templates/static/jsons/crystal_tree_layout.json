@@ -2,163 +2,163 @@
     "tree_layout": [
 {
  "impath": "data/cards/crystal/granite_scouts.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:1%;top:42.5%;",
  "name": "unit;crystal/granite_scouts"
 },
 {
  "impath": "data/cards/crystal/echoes_of_the_future.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:10%;top:31%;",
  "name": "unit;crystal/echoes_of_the_future"
 },
 {
  "impath": "data/cards/crystal/cataclysm.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:10%;top:55%;",
  "name": "unit;crystal/cataclysm"
 },
 {
  "impath": "data/cards/crystal/stone_weavers_spawner.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:19%;top:5%;",
  "name": "unit;crystal/stone_weavers_spawner"
 },
 {
  "impath": "data/cards/crystal/crystal_shrine.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:19%;top:31%;",
  "name": "unit;crystal/crystal_shrine"
 },
 {
  "impath": "data/cards/crystal/granite_scouts_spawner.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:19%;top:55%;",
  "name": "unit;crystal/granite_scouts_spawner"
 },
 {
  "impath": "data/cards/crystal/stone_weavers.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:19%;top:80%;",
  "name": "unit;crystal/stone_weavers"
 },
 {
  "impath": "data/cards/crystal/granite_vanguards.png",
- "width": "8%",
- "style": "position:absolute;left:28%;top:5%;",
+ "width": "6.5%",
+ "style": "position:absolute;left:26.5%;top:5%;",
  "name": "unit;crystal/granite_vanguards"
 },
 {
  "impath": "data/cards/crystal/crystal_enforcer_spawner.png",
- "width": "8%",
- "style": "position:absolute;left:28%;top:55%;",
+ "width": "6.5%",
+ "style": "position:absolute;left:26.5%;top:55%;",
  "name": "unit;crystal/crystal_enforcer_spawner"
 },
 {
  "impath": "data/cards/crystal/granite_bouncer.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:37%;top:31%;",
  "name": "unit;crystal/granite_bouncer"
 },
 {
  "impath": "data/cards/crystal/granite_vanguards_spawner.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:37%;top:55%;",
  "name": "unit;crystal/granite_vanguards_spawner"
 },
 {
  "impath": "data/cards/crystal/petrify.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:37%;top:80%;",
  "name": "unit;crystal/petrify"
 },
 {
  "impath": "data/cards/crystal/crystal_chanter_spawner.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:46%;top:5%;",
  "name": "unit;crystal/crystal_chanter_spawner"
 },
 {
  "impath": "data/cards/crystal/crystal_enforcer.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:46%;top:55%;",
  "name": "unit;crystal/crystal_enforcer"
 },
 {
  "impath": "data/cards/crystal/crystal_observer.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:55%;top:5%;",
  "name": "unit;crystal/crystal_observer"
 },
 {
  "impath": "data/cards/crystal/crystal_crescendo_spawner.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:55%;top:31%;",
  "name": "unit;crystal/crystal_crescendo_spawner"
 },
 {
  "impath": "data/cards/crystal/granite_chieftain.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:55%;top:55%;",
  "name": "unit;crystal/granite_chieftain"
 },
 {
  "impath": "data/cards/crystal/crystal_crescendo.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:55%;top:80%;",
  "name": "unit;crystal/crystal_crescendo"
 },
 {
  "impath": "data/cards/crystal/crystal_observer_spawner.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:64%;top:5%;",
  "name": "unit;crystal/crystal_observer_spawner"
 },
 {
  "impath": "data/cards/crystal/stone_circle.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:64%;top:31%;",
  "name": "unit;crystal/stone_circle"
 },
 {
  "impath": "data/cards/crystal/crystal_chanter.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:64%;top:80%;",
  "name": "unit;crystal/crystal_chanter"
 },
 {
  "impath": "data/cards/crystal/granite_guardian.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:73%;top:30%;",
  "name": "unit;crystal/granite_guardian"
 },
 {
  "impath": "data/cards/crystal/earthquake.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:73%;top:55%;",
  "name": "unit;crystal/earthquake"
 },
 {
  "impath": "data/cards/crystal/crystal_overseer_spawner.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:82%;top:5%;",
  "name": "unit;crystal/crystal_overseer_spawner"
 },
 {
  "impath": "data/cards/crystal/crystal_temple.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:82%;top:80%;",
  "name": "unit;crystal/crystal_temple"
 },
 {
  "impath": "data/cards/crystal/granite_chieftain_spawner.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:91%;top:31%;",
  "name": "unit;crystal/granite_chieftain_spawner"
 },
 {
  "impath": "data/cards/crystal/crystal_overseer.png",
- "width": "8%",
+ "width": "6.5%",
  "style": "position:absolute;left:91%;top:55%;",
  "name": "unit;crystal/crystal_overseer"
 }
